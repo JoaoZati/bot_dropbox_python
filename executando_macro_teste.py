@@ -2,25 +2,19 @@
 """
 Apenas comentário: Codigo usado na macro!!!
 
-Sub Macro1()
-'
-' Macro1 Macro
-' Execular 1+1
-'
-
-'
-    Range("A1").Select
-    ActiveCell.FormulaR1C1 = "1"
-    Range("A2").Select
-    ActiveCell.FormulaR1C1 = "1"
-    Range("A3").Select
-    Application.CutCopyMode = False
-    ActiveCell.FormulaR1C1 = "=R[-2]C+R[-1]C"
-    Range("A4").Select
-End Sub
-
 Sub UpdateLink()
     ActiveWorkbook.UpdateLink Name:=ActiveWorkbook.LinkSources, Type:=xlExcelLinks
+End Sub
+
+Sub Atualizar_link()
+'
+' Atualizar_link Macro
+'
+
+'
+    ActiveWorkbook.UpdateLink Name:= _
+        "C:\Users\Mitsidi\Dropbox (Mitsidi Projetos)\05_TEC-MB_Dir+Ger+Anl\TEC_Plan.-Técnico\TEC_Gerenciamento-Projetos\Dados_Horas-Cargo-Projeto-Macroprocesso_2021_Bi.xlsb" _
+        , Type:=xlExcelLinks
 End Sub
 """
 
