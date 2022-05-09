@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
-"""
-Apenas comentário: Codigo usado na macro!!!
+# """
+# Apenas comentário: Codigo usado na macro!!!
 
-Sub UpdateLink()
-    ActiveWorkbook.UpdateLink Name:=ActiveWorkbook.LinkSources, Type:=xlExcelLinks
-End Sub
+# Sub UpdateLink()
+#     ActiveWorkbook.UpdateLink Name:=ActiveWorkbook.LinkSources, Type:=xlExcelLinks
+# End Sub
 
-Sub Atualizar_link()
-'
-' Atualizar_link Macro
-'
+# Sub Atualizar_link()
+# '
+# ' Atualizar_link Macro
+# '
 
-'
-    ActiveWorkbook.UpdateLink Name:= _
-        "C:\Users\Mitsidi\Dropbox (Mitsidi Projetos)\05_TEC-MB_Dir+Ger+Anl\TEC_Plan.-Técnico\TEC_Gerenciamento-Projetos\Dados_Horas-Cargo-Projeto-Macroprocesso_2021_Bi.xlsb" _
-        , Type:=xlExcelLinks
-End Sub
-"""
+# '
+#     ActiveWorkbook.UpdateLink Name:= _
+#         "C:\Users\Mitsidi\Dropbox (Mitsidi Projetos)\05_TEC-MB_Dir+Ger+Anl\TEC_Plan.-Técnico\TEC_Gerenciamento-Projetos\Dados_Horas-Cargo-Projeto-Macroprocesso_2021_Bi.xlsb" _
+#         , Type:=xlExcelLinks
+# End Sub
+# """
 
 import xlwings as xw
 
