@@ -12,6 +12,13 @@ def executar_macro(excel_path, name_macro):
     wb.close()
 
 
+def open_personal(excel_path):
+    wb_personal = xw.Book(excel_path, update_links = False)
+    return wb_personal
+
+def tear_down_personal(wb_personal):
+    wb_personal.close()
+
 if __name__ == '__main__':
     excel_file_path = r'C:\Users\CESAR\Documents\GitHub\bot_dropbox_python\teste_macro.xlsb'
     macro_name = "Macro1"

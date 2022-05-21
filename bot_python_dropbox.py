@@ -1,4 +1,4 @@
-from macro_file import executar_macro
+from macro_file import executar_macro, open_personal, tear_down_personal
 
 import os
 
@@ -13,7 +13,13 @@ xlsb = [arq for arq in arquivos if arq.lower().endswith(".xlsb")]
 # Utilizar nome da macro
 Atualizar_link = "Atualizar_link"
 
+# Abrir planilha com macro
+pensonal_path = r'\arquivos_excell\PRJ_2212_MVP_Piloto_AHK.xlsb'
+wb_personal = open_personal(pensonal_path)
+
 # Looping para executar macro
 for caminho in xlsb:
     if caminho[111:114] == 'PRJ':
         executar_macro(caminho, Atualizar_link)
+
+tear_down_personal(wb_personal)
