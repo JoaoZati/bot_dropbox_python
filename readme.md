@@ -16,3 +16,10 @@ conda env update --name botpython-conda --file requirements/botpython-conda.yml 
 ### Exportar requirements
 ```
 conda env export > requirements/botpython-conda.yml
+
+### Instalar kivyMD
+
+pip install pillow
+pip install kivy
+pip install https://github.com/kivymd/KivyMD/archive/master.zip
+
