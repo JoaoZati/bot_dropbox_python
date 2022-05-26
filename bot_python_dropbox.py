@@ -3,7 +3,7 @@ from macro_file import executar_macro, open_personal, tear_down_personal
 import os
 
 # Caminho para executar o Bot
-pasta = r"C:\Users\Sebastian\Dropbox (Mitsidi Projetos)\05_TEC-MB_Dir+Ger+Anl\TEC_Plan.-Técnico\TEC_Gerenciamento-Projetos"
+pasta = r"C:\Users\Mitsidi\Dropbox (Mitsidi Projetos)\05_TEC-MB_Dir+Ger+Anl\TEC_Plan.-Técnico\TEC_Gerenciamento-Projetos"
 
 # Codigo para gerar lista de todas os projeto terminados em xlsb
 caminhos = [os.path.join(pasta, nome) for nome in os.listdir(pasta)]

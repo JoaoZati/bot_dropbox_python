@@ -70,6 +70,7 @@ class MainApp(MDApp):
             start = time.time()
             caminho = self.pasta + '\\' + file
             executar_macro(caminho, Atualizar_link)
+            print(caminho)
             end = time.time()
             tempo = end - start
             
