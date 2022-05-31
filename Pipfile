@@ -7,6 +7,7 @@ name = "pypi"
 kivy = "*"
 xlwings = "*"
 pillow = "*"
+kivymd = {file = "https://github.com/kivymd/KivyMD/archive/master.zip"}
 
 [dev-packages]
 

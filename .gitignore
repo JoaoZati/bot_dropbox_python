@@ -1,2 +1,5 @@
+# Ignore virtual envs
 virt
 vir
+.venv
+env
