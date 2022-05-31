@@ -1,25 +1,37 @@
-# EXCEL BOT
+# BOT Python Dropbox MITSIDI
 
-### Instalar requirements
+## Github
+- Instale o github e em sua pasta de preferencia rode
+
 ```
-conda env create --file requirements/botpython-conda.yml botpython-conda
-ou
-conda install --yes --file requirements/botpython-conda.yml
+git clone https://github.com/JoaoZati/bot_dropbox_python.git
+```
+Ele vai criar uma pasta com seu projeto dentro. Abra com o VS Code
 
-### Fazer update
-
-conda env update --file requirements/botpython-conda.yml  --prune
-ou
-conda env update --name botpython-conda --file requirements/botpython-conda.yml --prune
+## Instalar requirements
+- Caso nao tenha o pipenv instalado no seu python rode o comando
+```
+pip install pipenv
 ```
 
-### Exportar requirements
+- Rode para criar um ambiente virtual .venv:
 ```
-conda env export > requirements/botpython-conda.yml
+python -m venv .venv
+```
 
-### Instalar kivyMD
+- Instale as dependencias:
 
-pip install pillow
-pip install kivy
-pip install https://github.com/kivymd/KivyMD/archive/master.zip
+```
+pipenv install
+```
 
+- Para habilitar o ambiente virtual no seu terminal
+
+```
+pipenv shell
+```
+
+## Debugar no VS Code
+Para debugar no VS Code você precisa habilitar após seu arquivo .venv no seu Python interpreter do ide.
+
+- Digite Ctrl + Shift P e vá para Command Pallets -> Digite Python: Select Interpreter -> Escolha a opção do .venv (dir_projeto/.venv/bin/python)
