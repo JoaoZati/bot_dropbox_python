@@ -4,10 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-kivy = "*"
 xlwings = "*"
 pillow = "*"
-kivymd = {file = "https://github.com/kivymd/KivyMD/archive/master.zip"}
 
 [dev-packages]
 
